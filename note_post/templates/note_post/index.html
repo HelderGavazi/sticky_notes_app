@@ -1,0 +1,20 @@
+<!-- note_post/templates/note_post/index.html -->
+
+{% extends "note_post/base.html" %}
+
+{% block title %}Sticky Notes{% endblock %}
+
+{% block content %}
+<div class="index-page">
+    <h1>Note Posts</h1>
+    {% for post in posts %}
+    <ul>
+    
+        <li><a href="{% url 'view_post' post.id %}">{{ post.title }}</a> - {{ post.created_at }} by {{ post.author }}</a></li>
+    
+    </ul>
+    {% endfor %}
+    
+        <a class="add-post-button" href="{% url 'add_post' %}">Add New Post</a>
+</div>
+{% endblock %}>

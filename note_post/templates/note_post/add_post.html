@@ -1,0 +1,23 @@
+<!-- note_post/templates/note_post/add_post.html -->
+
+{% extends "note_post/base.html" %}
+
+{% block title %}Add Post{% endblock %}
+
+{% block content %}
+<div class="add-post-page">
+    <h1>Add a New Note Post</h1>
+    <form method="post">
+        {% csrf_token %}
+         <label for="title">Title:</label>
+        <input type="text" id="title" name="title"><br>
+        <label for="content">Content:</label>
+        <textarea id="content" name="content"></textarea><br>
+        <label for="author">Author:</label>
+        <input type="text" id="author" name="author"><br>
+        <button type="submit">Add Post</button>
+        <a class="back-button" href="{% url 'index' %}">Cancel</a>
+    </form>
+    
+</div>
+{% endblock %}
