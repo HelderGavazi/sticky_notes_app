@@ -1,5 +1,7 @@
 Here’s an updated version of the Django Sticky Notes app guide with added comments to explain each part of the scripts and an included model class diagram.
 
+*) Read the file incluided "Sticky_Notes_App Design Diagrams" (.pdf) for App blue print!
+
 ### Django Sticky Notes App Guide
 
 This guide will walk you through the process of creating a Sticky Notes app using Django. It covers setting up your project, designing models, creating views and templates, handling static files, and configuring URLs.
